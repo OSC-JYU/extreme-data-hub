@@ -2,7 +2,7 @@
 
 Extreme Data hub is a model for collecting, sharing and displaying data with very loose technical constraints. Data in the hub can be used for health checks, reporting, searching, exhibitions or creating other data-related services.
 
-## sets
+## Sets
 Use any storage system you like. Set can be a MongoDB collection for example
 TASK:
 provide queryable data storage for harvester and transformers
@@ -11,7 +11,7 @@ RULES:
 - Set name starts with "set__"
 
 
-## harvesters
+## Harvesters
 Use any tools you like (python, javascript, java etc.)
 
 TASK:
@@ -22,13 +22,13 @@ RULES:
 - items must have unique id (eg. handle)
 - items must have timestamp
 
-## queries
-Use query language of your storage system (MongoDB, SQL, Cycper...)
+## Queries
+Use query language of your storage system (MongoDB, SQL...)
 
 TASK:
 Provide a subset from set
 
-## transformers
+## Transformers
 Use any tools you like (python, javascript, java etc.)
 
 TASK:
@@ -39,13 +39,13 @@ RULES:
 - if transformer depends on other transformer (for example lookup for other transformet set), the execution order must be the same as the alphabetical sort order of transformer scripts (name like 1_myfirst.py, 2_mylookup.py)
 
 
-## endpoints
+## Endpoints
 Use any tools you like
 
 TASK:
 provide data in different formats (like csv, RSS, REST) to OTHER users
 
-## exhibitions
+## Exhibitions
 Exhibitions are DISPLAYS of your data based on data providec by query or queries.
 Exhibition can be a website, Omeka-S site or any other display mechanism.
 
@@ -80,8 +80,4 @@ Then we run transformers:
     make_isbn_lookup_dissertations.py
 
 
-
-For managing the system,
-- meta__sets
-- meta__queries
--
+Then we run exhibitions.
