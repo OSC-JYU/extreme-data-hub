@@ -24,11 +24,13 @@ RULES:
 
 ## queries
 Use query language of your storage system (MongoDB, SQL, Cycper...)
+
 TASK:
 Provide a subset from set
 
 ## transformers
 Use any tools you like (python, javascript, java etc.)
+
 TASK:
 make data usable for your purposes (can be based on queries)
 
